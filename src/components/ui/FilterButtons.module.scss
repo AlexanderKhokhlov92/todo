@@ -1,0 +1,21 @@
+.button {
+  appearance: none;
+  display: block;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #8f8f8f;
+  padding: 4px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 1s;
+  &:disabled {
+    border: 2px solid #e9d9d8;
+    appearance: none;
+  }
+}
+.buttonWrapper {
+  display: flex;
+  width: 210px;
+  justify-content: space-between;
+}

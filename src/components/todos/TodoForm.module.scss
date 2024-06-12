@@ -1,0 +1,47 @@
+.form {
+  position: relative;
+}
+.formSubmitButton {
+  position: absolute;
+  left: 15px;
+  top: 25%;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formInput {
+  width: 100%;
+  height: 80px;
+  outline: none;
+  appearance: none;
+  padding: 10px;
+  padding-left: 80px;
+  font-size: 32px;
+  box-shadow: 0px 2px 2px 2px #dadada;
+  border: none;
+  color: #4d4d4d;
+  font-family: 'Montserrat', sans-serif;
+  &::placeholder {
+    color: #888;
+    font-style: italic;
+    opacity: 0.3;
+  }
+}
+
+.icon {
+  fill: #e6e6e6;
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.2);
+    fill: #4d4d4d;
+  }
+}

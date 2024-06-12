@@ -1,0 +1,33 @@
+.todosActionsWrapper {
+  height: 50px;
+  background-color: #fefefe;
+  box-shadow: 0px 2px 2px 2px #dadada;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.incompleteTodoCounter {
+  font-size: 16px;
+  color: #8f8f8f;
+}
+
+.deleteButton {
+  font-size: 16px;
+  color: #8f8f8f;
+  padding: 4px 10px;
+  border-radius: 7px;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.7s;
+  &:hover {
+    color: #e9d9d8;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
