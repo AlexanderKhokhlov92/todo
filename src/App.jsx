@@ -5,6 +5,7 @@ import Todolist from './components/todos/Todolist'
 import { v4 as uuidv4 } from 'uuid'
 import TodosActions from './components/todos/TodosActions'
 import FilterButtons from './components/ui/FilterButtons'
+import FadingText from './components/ui/FadingText'
 
 function App() {
   const [todos, setTodos] = useState([])
@@ -56,6 +57,16 @@ function App() {
     setTodos(todos.filter((todo) => !todo.isCompleted))
   }
 
+  const texts = [
+    'Hello, world!',
+    'Press "Enter" to add a new one todo',
+    'Enjoy your stay!',
+    'Have a great day!',
+    'You will succeed!',
+    'Believe in yourself',
+  ]
+  const interval = 7000 // Change text every 3 seconds
+
   return (
     <div className="App light">
       <h1 className="app_main-title">todos</h1>
@@ -72,6 +83,7 @@ function App() {
       >
         <FilterButtons filter={filter} onChange={handleFilterChange} />
       </TodosActions>
+      <FadingText texts={texts} interval={interval} />
     </div>
   )
 }
