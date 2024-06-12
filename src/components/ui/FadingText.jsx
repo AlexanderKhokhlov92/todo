@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './FadingText.scss'
+import styles from './FadingText.module.scss'
 
 const FadingText = ({ texts, interval }) => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
@@ -20,12 +20,12 @@ const FadingText = ({ texts, interval }) => {
   }, [texts, interval])
 
   return (
-    <div className="fade-container">
+    <div className={styles.fadeContainer}>
       {texts.map((text, index) => (
         <div
           key={index}
-          className={`fade-text ${
-            index === currentTextIndex && show ? 'show' : ''
+          className={`${styles.fadeText} ${
+            index === currentTextIndex && show ? styles.show : ''
           }`}
         >
           {text}

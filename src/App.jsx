@@ -65,7 +65,7 @@ function App() {
     'You will succeed!',
     'Believe in yourself',
   ]
-  const interval = 7000 // Change text every 3 seconds
+  const interval = 4500 // Change text every 3 seconds
 
   return (
     <div className="App light">
