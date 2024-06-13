@@ -18,3 +18,13 @@
 .fadeText.show {
   opacity: 1;
 }
+
+@media (max-width: 650px) {
+  .fadeText {
+    font-size: 26px;
+  }
+  .fadeContainer {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+}

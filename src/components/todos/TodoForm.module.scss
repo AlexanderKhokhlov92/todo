@@ -45,3 +45,26 @@
     fill: #4d4d4d;
   }
 }
+
+@media (max-width: 650px) {
+  .formInput {
+    font-size: 16px;
+    height: 40px;
+    padding-left: 40px;
+  }
+  .formSubmitButton {
+    left: 7.5px;
+    top: 50%;
+    transform: translateY(-35%);
+    width: 20px;
+    height: 20px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    &:hover {
+      transform: none;
+      fill: #e6e6e6;
+    }
+  }
+}

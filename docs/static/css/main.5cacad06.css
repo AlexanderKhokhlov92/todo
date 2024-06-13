@@ -1,4 +1,5 @@
 * {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -27,6 +28,7 @@
   font-weight: 700;
   src: url(../../fonts/Montserrat-Bold.ttf) format('truetype');
 }
+
 body {
   background-color: #ebebeb;
   font-family: Montserrat, sans-serif;
@@ -35,13 +37,10 @@ body {
 .App {
   margin: 0 auto;
   max-width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
 }
-
-.TodoForm_form__\+01JW {
-  position: relative;
-}
-
 .app_main-title {
   color: #e9d9d8;
   font-size: 68px;
@@ -49,7 +48,16 @@ body {
   margin-bottom: 40px;
   margin-top: 30px;
 }
-
+@media (max-width: 650px) {
+  .app_main-title {
+    font-size: 34px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+}
+.TodoForm_form__\+01JW {
+  position: relative;
+}
 .TodoForm_formSubmitButton__YGzwg {
   align-items: center;
   -webkit-appearance: none;
@@ -94,6 +102,28 @@ body {
   fill: #4d4d4d;
   transform: scale(1.2);
 }
+@media (max-width: 650px) {
+  .TodoForm_formInput__-TTSa {
+    font-size: 16px;
+    height: 40px;
+    padding-left: 40px;
+  }
+  .TodoForm_formSubmitButton__YGzwg {
+    height: 20px;
+    left: 7.5px;
+    top: 50%;
+    transform: translateY(-35%);
+    width: 20px;
+  }
+  .TodoForm_icon__N2jAf {
+    height: 20px;
+    width: 20px;
+  }
+  .TodoForm_icon__N2jAf:hover {
+    fill: #e6e6e6;
+    transform: none;
+  }
+}
 .Todo_todo__JGmyt {
   align-items: center;
   background-color: #fefefe;
@@ -128,7 +158,6 @@ body {
   transition: 0.7s;
 }
 .Todo_label__2ZSWJ:hover {
-  border-color: #ebebeb;
   transform: scale(1.2);
 }
 .Todo_label__2ZSWJ:before {
@@ -177,6 +206,44 @@ body {
   text-align: left;
   white-space: normal;
 }
+@media (max-width: 650px) {
+  .Todo_todo__JGmyt {
+    font-size: 16px;
+    min-height: 40px;
+    padding-left: 40px;
+  }
+  .Todo_checkboxWrapper__d\+HKn,
+  .Todo_label__2ZSWJ {
+    height: 20px;
+    width: 20px;
+  }
+  .Todo_label__2ZSWJ {
+    background-color: #0000;
+    border: 1.5px solid #ededed;
+    border-radius: 50%;
+    cursor: pointer;
+    left: 7.5px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transition: 0.7s;
+  }
+  .Todo_label__2ZSWJ:hover {
+    transform: none;
+  }
+  .Todo_label__2ZSWJ:before {
+    bottom: 8px;
+    height: 2px;
+    left: 5.5px;
+    width: 11px;
+  }
+  .Todo_label__2ZSWJ:after {
+    bottom: 5px;
+    height: 2px;
+    left: 3px;
+    width: 6px;
+  }
+}
 .TodosActions_todosActionsWrapper__Od9Bl {
   align-items: center;
   background-color: #fefefe;
@@ -210,6 +277,34 @@ body {
 .TodosActions_deleteButton__9RzIR:active {
   opacity: 0.3;
 }
+@media (max-width: 650px) {
+  .TodosActions_todosActionsWrapper__Od9Bl {
+    grid-row-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    min-height: 68px;
+    padding: 5px 7.5px;
+    row-gap: 10px;
+  }
+  .TodosActions_incompleteTodoCounter__gh7Cv {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    grid-column: 2;
+    height: 24px;
+    justify-self: end;
+    order: 1;
+  }
+  .TodosActions_deleteButton__9RzIR {
+    font-size: 14px;
+    justify-self: start;
+    padding-left: 0;
+  }
+  .TodosActions_deleteButton__9RzIR:hover {
+    color: #8f8f8f;
+  }
+}
 .FilterButtons_button__KOJLz {
   -webkit-appearance: none;
   appearance: none;
@@ -233,6 +328,18 @@ body {
   justify-content: space-between;
   width: 210px;
 }
+@media (max-width: 650px) {
+  .FilterButtons_button__KOJLz {
+    font-size: 14px;
+    padding: 2px 5px;
+  }
+  .FilterButtons_buttonWrapper__ftnXt {
+    align-items: center;
+    grid-column: span 2;
+    height: 24px;
+    width: auto;
+  }
+}
 .FadingText_fadeContainer__gZ3Hx {
   height: 100px;
   margin-bottom: 30px;
@@ -251,4 +358,13 @@ body {
 .FadingText_fadeText__vAndx.FadingText_show__vRO0B {
   opacity: 1;
 }
-/*# sourceMappingURL=main.23233113.css.map*/
+@media (max-width: 650px) {
+  .FadingText_fadeText__vAndx {
+    font-size: 26px;
+  }
+  .FadingText_fadeContainer__gZ3Hx {
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=main.5cacad06.css.map*/

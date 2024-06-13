@@ -19,3 +19,15 @@
   width: 210px;
   justify-content: space-between;
 }
+@media (max-width: 650px) {
+  .button {
+    font-size: 14px;
+    padding: 2px 5px;
+  }
+  .buttonWrapper {
+    width: auto;
+    grid-column: span 2;
+    height: 24px;
+    align-items: center;
+  }
+}

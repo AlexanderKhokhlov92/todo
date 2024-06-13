@@ -2,6 +2,8 @@
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .app_main-title {
@@ -10,4 +12,12 @@
   font-size: 68px;
   font-weight: 300;
   color: #e9d9d8;
+}
+
+@media (max-width: 650px) {
+  .app_main-title {
+    font-size: 34px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
 }

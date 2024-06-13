@@ -31,3 +31,33 @@
     opacity: 0.3;
   }
 }
+@media (max-width: 650px) {
+  .todosActionsWrapper {
+    min-height: 68px;
+    height: 100%;
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .incompleteTodoCounter {
+    font-size: 14px;
+    order: 1;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    grid-column: 2;
+  }
+  .deleteButton {
+    font-size: 14px;
+    padding-left: 0;
+    justify-self: start;
+    &:hover {
+      color: #8f8f8f;
+    }
+  }
+}
