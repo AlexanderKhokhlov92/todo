@@ -37,6 +37,11 @@ body {
   max-width: 600px;
   text-align: center;
 }
+
+.TodoForm_form__\+01JW {
+  position: relative;
+}
+
 .app_main-title {
   color: #e9d9d8;
   font-size: 68px;
@@ -44,9 +49,7 @@ body {
   margin-bottom: 40px;
   margin-top: 30px;
 }
-.TodoForm_form__\+01jw {
-  position: relative;
-}
+
 .TodoForm_formSubmitButton__YGzwg {
   align-items: center;
   -webkit-appearance: none;
