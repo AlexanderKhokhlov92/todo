@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+# Todo-приложение
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Обзор
 
-## Available Scripts
+Это Todo-приложение позволяет эффективно управлять повседневными задачами. Оно
+создано с использованием React и включает функции управления состоянием, повторного
+использования компонентов и адаптивного дизайна.
 
-In the project directory, you can run:
+## Возможности
 
 ### `npm start`
 
